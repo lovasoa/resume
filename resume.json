@@ -1,0 +1,157 @@
+{
+  "basics": {
+    "name": "Ophir LOJKINE",
+    "label": "ENGINEERING STUDENT & SOFTWARE DEVELOPER",
+    "picture": "https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAjCAAAAJDljMzliMzQ4LTEwNDktNGJlNS1hOTcwLWQzZDRmOTNkZGRlMQ.jpg",
+    "email": "richard.hendriks@gmail.com",
+    "phone": "+7 (926) 465-86-22",
+    "website": "https://github.com/lovasoa",
+    "summary": "French engineering student, keen on writing code, discovering new algorithms, and travelling.",
+    "location": {
+      "address": "40 av. de Chateaubriand",
+      "postalCode": "94230",
+      "city": "Cachan",
+      "countryCode": "FR",
+      "region": ""
+    },
+    "profiles": [
+      {
+        "network": "github",
+        "username": "lovasoa",
+        "url": "https://github.com/lovasoa?tab=repositories"
+      },
+      {
+        "network": "linkedin",
+        "username": "Ophir LOJKINE",
+        "url": "https://www.linkedin.com/in/ophir-lojkine-412556ab"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "ERDF",
+      "position": "Intern",
+      "website": "http://www.enedis.fr/",
+      "startDate": "2015-04-01",
+      "endDate": "2015-08-05",
+      "summary": "ERDF (now Enedis) is the largest french electric network compagny. I interned as a data scientist.",
+      "highlights": [
+        "Build a workload prediction tool, using python and scikit-learn."
+      ]
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "Bauman Moscow State University",
+      "area": "Computer Science and Control Systems",
+      "studyType": "Master's degree",
+      "startDate": "2015-09-01",
+      "endDate": "2017-07-01",
+      "gpa": "",
+      "courses": [
+        "Relational algebra",
+        "Post-relational databases",
+        "Queuing theory",
+        "Post-relational databases",
+        "UML modeling",
+        "Project management",
+        "Human factors"
+      ]
+    },
+    {
+      "institution": "École Centrale de Nantes",
+      "area": "Engineering",
+      "studyType": "Grande École (master degree)",
+      "startDate": "2013-09-01",
+      "endDate": "2015-07-01",
+      "gpa": "",
+      "courses": [
+        "General engineering",
+        "Object-oriented programming",
+        "Databases",
+        "Compilers",
+        "Functional programming"
+      ]
+    }
+  ],
+  "awards": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Front-end web development",
+      "level": "Master",
+      "keywords": [
+        "python",
+        "scipy",
+        "scikit-learn",
+        "HTML",
+        "CSS",
+        "Javascript",
+        "Angular",
+        "Vue.js"
+      ]
+    },
+    {
+      "name": "Scientific programming",
+      "level": "",
+      "keywords": [
+        "python",
+        "scipy",
+        "scikit-learn"
+      ]
+    },
+    {
+      "name": "Back-end web development",
+      "level": "Intermediate",
+      "keywords": [
+        "Node",
+        "PHP",
+        "Python"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "French",
+      "fluency": "Native tongue"
+    },
+    {
+      "language": "English",
+      "fluency": "Good command, both written and spoken (TOEIC 930)"
+    },
+    {
+      "language": "Russian",
+      "fluency": "Conversational (lived 2 years in Moscow)"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Theater",
+      "keywords": [
+        "Played in Centrale Nantes' theater company"
+      ]
+    },
+    {
+      "name": "Rowing",
+      "keywords": [
+        "Practiced at Centrale Nantes"
+      ]
+    },
+    {
+      "name": "Climbing",
+      "keywords": [
+        "Practiced in Moscow"
+      ]
+    },
+    {
+      "name": "Free software",
+      "keywords": [
+        "using",
+        "contributing code",
+        "reporting bugs"
+      ]
+    }
+  ],
+  "references": []
+}
