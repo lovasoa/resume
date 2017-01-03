@@ -4,7 +4,9 @@
   "description": "Ophir LOJKINE's resume",
   "main": "resume.json",
   "scripts": {
-    "test": "jsonschema --instance resume.json node_modules/resume-schema/schema.json"
+    "test": "jsonschema --instance resume.json node_modules/resume-schema/schema.json",
+    "build": "resume export index.html",
+    "preversion": "npm run build"
   },
   "repository": {
     "type": "git",
