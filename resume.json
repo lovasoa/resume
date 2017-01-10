@@ -30,13 +30,15 @@
   "work": [
     {
       "company": "ERDF",
-      "position": "Intern",
+      "position": "Data science intern",
       "website": "http://www.enedis.fr/",
       "startDate": "2015-04-01",
       "endDate": "2015-08-05",
-      "summary": "ERDF (now Enedis) is the largest french electric network compagny. I interned as a data scientist.",
+      "summary": "ERDF (now Enedis) is the largest french electric network compagny. I interned as a data scientist, and built a workload prediction tool.",
       "highlights": [
-        "Build a workload prediction tool, using python and scikit-learn."
+        "used python with ipython, numpy, scipy and scikit-learn",
+        "worked with an SQL database of over 10 million datapoints describing the evolution of electric consumption over ~5 years at several points in the distribution network.",
+        "Built a web application to access the previsions."
       ]
     }
   ],
