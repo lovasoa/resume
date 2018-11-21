@@ -1,18 +1,15 @@
 {
   "basics": {
     "name": "Ophir LOJKINE",
-    "label": "ENGINEERING STUDENT & SOFTWARE DEVELOPER",
-    "picture": "https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAjCAAAAJDljMzliMzQ4LTEwNDktNGJlNS1hOTcwLWQzZDRmOTNkZGRlMQ.jpg",
+    "label": "SOFTWARE ENGINEER",
+    "picture": "https://user-images.githubusercontent.com/552629/48856271-460eb580-edb6-11e8-9ede-5941e83d9af7.jpg",
     "email": "pere.jobs@gmail.com",
-    "phone": "+7 (926) 465-86-22",
+    "phone": "+33 6 44 85 27 35",
     "website": "https://github.com/lovasoa",
-    "summary": "French engineering student, keen on writing code, discovering new algorithms, and travelling. I've studied software engineering in general, and data analysis in particular in France and then in Russia, and will graduate in 2017.",
+    "summary": "I'm an enthusiastic French software engineer. My main interests include data science, software architecture, and optimization. I've studied software engineering in general, and data analysis in particular in France and Russia.",
     "location": {
-      "address": "40 av. de Chateaubriand",
-      "postalCode": "94230",
-      "city": "Cachan",
-      "countryCode": "FR",
-      "region": ""
+      "city": "Paris",
+      "countryCode": "FR"
     },
     "profiles": [
       {
@@ -33,6 +30,19 @@
     ]
   },
   "work": [
+    {
+      "company": "Qwant",
+      "position": "Data Engineer",
+      "website": "https://www.qwant.com/",
+      "startDate": "2015-04-01",
+      "endDate": "2015-08-05",
+      "summary": "Qwant is a search engine that does not track its users. It has the largest web index in Europe, the quality of which I contributed to. I was a member of the core 'data' team, working on the company's web crawlers, databases (indices), and data analysis tools.",
+      "highlights": [
+        "created a machine-learning model for the classification of user searches (using distributed word-embedding and K-Means in Spark)",
+        "Contributed to the crawlers, fixed many data-quality issues.",
+        "Built data visualization tools."
+      ]
+    },
     {
       "company": "ERDF",
       "position": "Data science intern",
