@@ -38,7 +38,7 @@
       "endDate": "2018-12-01",
       "summary": "Qwant is a search engine that does not track its users. It has the largest web index in Europe, the quality of which I contributed to. I was a member of the core 'data' team, working on the company's web crawlers, databases (indices), and data analysis tools.",
       "highlights": [
-        "created a machine-learning model for the classification of user searches (using distributed word-embedding and K-Means in Spark)",
+        "created a machine-learning model for the classification of user searches (using distributed word-embedding and clustering in Spark)",
         "Contributed to the crawlers, fixed many data-quality issues.",
         "Built data visualization tools."
       ]
