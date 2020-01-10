@@ -162,6 +162,12 @@
   ],
   "interests": [
     {
+      "name": "Ethical Hacking",
+      "keywords": [
+        "I found security vulnerabilities on a mozilla website, Firefox, Chrome, and Safari, and got awarded a bug bounty from Mozilla. I love playing root-me.org, and am an avid information security news reader."
+      ]
+    },
+    {
       "name": "Theater",
       "keywords": [
         "Played in Centrale Nantes' theater company"
