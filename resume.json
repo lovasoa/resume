@@ -3,7 +3,7 @@
     "name": "Ophir LOJKINE",
     "label": "SOFTWARE ENGINEER",
     "picture": "https://user-images.githubusercontent.com/552629/48856271-460eb580-edb6-11e8-9ede-5941e83d9af7.jpg",
-    "email": "pere.jobs@gmail.com",
+    "email": "perejobs+resume@gmail.com",
     "phone": "+33 6 44 85 27 35",
     "website": "https://github.com/lovasoa",
     "summary": "I'm an enthusiastic French software engineer. My main interests include data science, software architecture, and optimization. I've studied software engineering in general, and data analysis in particular in France and Russia.",
@@ -37,9 +37,10 @@
       "startDate": "2018-12-01",
       "summary": "We built an energy data management platform for Total that allows energy market actors to cooperate efficiently, visualize their data and extract valuable insights, and manage their devices in the field.",
       "highlights": [
-        "Wrote python services that now handle sensitive and complex time-series in realtime in production every day.",
+        "Wrote Python services that now handle sensitive and complex time-series in realtime in production every day.",
         "I had the occasion to work both on a large kubernetes cluster and embedded real-time devices with limited resources.",
-        "Built insightful data visualizations with Grafana."
+        "Built insightful data visualizations with Grafana.",
+        "Modeled a large multivariate optimization problem in Tensorflow"
       ]
     },
     {
@@ -132,6 +133,7 @@
       "level": "Intermediate",
       "keywords": [
         "python",
+        "tensorflow",
         "scipy",
         "scikit-learn"
       ]
@@ -141,6 +143,7 @@
       "level": "Master",
       "keywords": [
         "Python",
+        "Rust",
         "Node",
         "PHP"
       ]
@@ -164,7 +167,8 @@
     {
       "name": "Ethical Hacking",
       "keywords": [
-        "I found security vulnerabilities on a mozilla website, Firefox, Chrome, and Safari, and got awarded a bug bounty from Mozilla. I love playing root-me.org, and am an avid information security news reader."
+        "I found security vulnerabilities on a mozilla website, Firefox, Chrome, and Safari, and got awarded a bug bounty from Mozilla.",
+        "I love playing root-me.org challenges, and am an avid information security news reader."
       ]
     },
     {
