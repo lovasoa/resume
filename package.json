@@ -24,9 +24,9 @@
   },
   "homepage": "https://github.com/lovasoa/resume#readme",
   "dependencies": {
-    "resume-cli": "^1.1.2"
+    "resume-cli": "^1.2.7"
   },
   "devDependencies": {
-    "resume-schema": "0.0.16"
+    "resume-schema": "0.0.18"
   }
 }
