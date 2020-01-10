@@ -31,6 +31,18 @@
   },
   "work": [
     {
+      "company": "AutoGrid",
+      "position": "Senior Software Engineer",
+      "website": "https://www.auto-grid.com/",
+      "startDate": "2018-12-01",
+      "summary": "We built an energy data management platform for Total that allows energy market actors to cooperate efficiently, visualize their data and extract valuable insights, and manage their devices in the field.",
+      "highlights": [
+        "Wrote python services that now handle sensitive and complex time-series in realtime in production every day.",
+        "I had the occasion to work both on a large kubernetes cluster and embedded real-time devices with limited resources.",
+        "Built insightful data visualizations with Grafana."
+      ]
+    },
+    {
       "company": "Qwant",
       "position": "Data Engineer",
       "website": "https://www.qwant.com/",
@@ -94,25 +106,30 @@
     }
   ],
   "awards": [],
-  "publications": [],
+  "publications": [
+    {
+      "name": "Optimal parameters for bloom-filtered joins in Spark",
+      "releaseDate": "2017-06-12",
+      "website": "https://arxiv.org/abs/1706.02785",
+      "summary": "an algorithm that joins relational database tables efficiently in a distributed environment using Bloom filters of an optimal size"
+    }
+  ],
   "skills": [
     {
       "name": "Front-end web development",
       "level": "Master",
       "keywords": [
-        "python",
-        "scipy",
-        "scikit-learn",
         "HTML",
         "CSS",
         "Javascript",
         "Angular",
-        "Vue.js"
+        "Vue.js",
+        "Svelte"
       ]
     },
     {
       "name": "Scientific programming",
-      "level": "",
+      "level": "Intermediate",
       "keywords": [
         "python",
         "scipy",
@@ -121,11 +138,11 @@
     },
     {
       "name": "Back-end web development",
-      "level": "Intermediate",
+      "level": "Master",
       "keywords": [
+        "Python",
         "Node",
-        "PHP",
-        "Python"
+        "PHP"
       ]
     }
   ],
@@ -140,7 +157,7 @@
     },
     {
       "language": "Russian",
-      "fluency": "Conversational (lived 2 years in Moscow)"
+      "fluency": "Conversational (I lived 2 years in Moscow and my partner is russian)"
     }
   ],
   "interests": [
