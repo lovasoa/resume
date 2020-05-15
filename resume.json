@@ -1,0 +1,202 @@
+{
+  "basics": {
+    "name": "Ophir LOJKINE",
+    "label": "SOFTWARE ENGINEER",
+    "picture": "https://user-images.githubusercontent.com/552629/48856271-460eb580-edb6-11e8-9ede-5941e83d9af7.jpg",
+    "email": "contact@ophir.dev",
+    "phone": "+33 6 44 85 27 35",
+    "website": "https://github.com/lovasoa",
+    "summary": "I'm an enthusiastic French software engineer. My main interests include data science, software architecture, and optimization. I've studied software engineering in general, and data analysis in particular in France and Russia.",
+    "location": {
+      "city": "Paris",
+      "countryCode": "FR"
+    },
+    "profiles": [
+      {
+        "network": "github",
+        "username": "lovasoa",
+        "url": "https://github.com/lovasoa?tab=repositories"
+      },
+      {
+        "network": "linkedin",
+        "username": "Ophir LOJKINE",
+        "url": "https://www.linkedin.com/in/ophir-lojkine-412556ab"
+      },
+      {
+        "network": "stackoverflow",
+        "username": "lovasoa",
+        "url": "http://stackoverflow.com/users/3579309/lovasoa"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "AutoGrid",
+      "position": "Senior Software Engineer",
+      "website": "https://www.auto-grid.com/",
+      "startDate": "2018-12-01",
+      "summary": "We built an energy data management platform for Total that allows energy market actors to cooperate efficiently, visualize their data and extract valuable insights, and manage their devices in the field.",
+      "highlights": [
+        "Wrote Python services that now handle sensitive and complex time-series in realtime in production every day.",
+        "I had the occasion to work both on a large kubernetes cluster and embedded real-time devices with limited resources.",
+        "Built insightful data visualizations with Grafana.",
+        "Modeled a large multivariate optimization problem in Tensorflow"
+      ]
+    },
+    {
+      "company": "Qwant",
+      "position": "Data Engineer",
+      "website": "https://www.qwant.com/",
+      "startDate": "2017-09-04",
+      "endDate": "2018-12-01",
+      "summary": "Qwant is a search engine that does not track its users. It has the largest web index in Europe, the quality of which I contributed to. I was a member of the core 'data' team, working on the company's web crawlers, databases (indices), and data analysis tools.",
+      "highlights": [
+        "created a machine-learning model for the classification of user searches (using distributed word-embedding and clustering in Spark)",
+        "Contributed to the crawlers, fixed many data-quality issues.",
+        "Built data visualization tools."
+      ]
+    },
+    {
+      "company": "ERDF",
+      "position": "Data science intern",
+      "website": "http://www.enedis.fr/",
+      "startDate": "2015-04-01",
+      "endDate": "2015-08-05",
+      "summary": "ERDF (now Enedis) is the largest french electric network compagny. I interned as a data scientist, and built a workload prediction tool.",
+      "highlights": [
+        "used python with ipython, numpy, scipy and scikit-learn",
+        "worked with an SQL database of over 10 million datapoints describing the evolution of electric consumption over ~5 years at several points in the distribution network.",
+        "Built a web application to access the previsions."
+      ]
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "Bauman Moscow State University",
+      "area": "Computer Science and Control Systems",
+      "studyType": "Master's degree",
+      "startDate": "2015-09-01",
+      "endDate": "2017-07-01",
+      "gpa": "",
+      "courses": [
+        "Master's thesis: implement, compare, and model several distributed join algorithms on Spark",
+        "Relational algebra",
+        "Post-relational databases",
+        "Queuing theory",
+        "Post-relational databases",
+        "UML modeling",
+        "Project management",
+        "Human factors"
+      ]
+    },
+    {
+      "institution": "École Centrale de Nantes",
+      "area": "Engineering",
+      "studyType": "Grande École (master degree)",
+      "startDate": "2013-09-01",
+      "endDate": "2015-07-01",
+      "gpa": "",
+      "courses": [
+        "General engineering",
+        "Object-oriented programming",
+        "Databases",
+        "Compilers",
+        "Functional programming"
+      ]
+    }
+  ],
+  "awards": [],
+  "publications": [
+    {
+      "name": "Optimal parameters for bloom-filtered joins in Spark",
+      "releaseDate": "2017-06-12",
+      "website": "https://arxiv.org/abs/1706.02785",
+      "summary": "an algorithm that joins relational database tables efficiently in a distributed environment using Bloom filters of an optimal size"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Front-end web development",
+      "level": "Master",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "Angular",
+        "Vue.js",
+        "Svelte"
+      ]
+    },
+    {
+      "name": "Scientific programming",
+      "level": "Intermediate",
+      "keywords": [
+        "python",
+        "tensorflow",
+        "scipy",
+        "scikit-learn"
+      ]
+    },
+    {
+      "name": "Back-end web development",
+      "level": "Master",
+      "keywords": [
+        "Python",
+        "Rust",
+        "Node",
+        "PHP"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "French",
+      "fluency": "Native tongue"
+    },
+    {
+      "language": "English",
+      "fluency": "Good command, both written and spoken (TOEIC 930)"
+    },
+    {
+      "language": "Russian",
+      "fluency": "Conversational (I lived 2 years in Moscow and my partner is russian)"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Ethical Hacking",
+      "keywords": [
+        "I found security vulnerabilities on a mozilla website, Firefox, Chrome, and Safari, and got awarded a bug bounty from Mozilla.",
+        "I love playing root-me.org challenges, and am an avid information security news reader."
+      ]
+    },
+    {
+      "name": "Theater",
+      "keywords": [
+        "Played in Centrale Nantes' theater company"
+      ]
+    },
+    {
+      "name": "Rowing",
+      "keywords": [
+        "Practiced at Centrale Nantes"
+      ]
+    },
+    {
+      "name": "Climbing",
+      "keywords": [
+        "Practiced in Moscow"
+      ]
+    },
+    {
+      "name": "Free software",
+      "keywords": [
+        "using",
+        "contributing code",
+        "reporting bugs"
+      ]
+    }
+  ],
+  "references": []
+}
