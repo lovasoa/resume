@@ -72,8 +72,8 @@
   ],
   "volunteer": [
     {
-      "organization": "Free Software",
-      "position": "Volunteer",
+      "organization": "WBO Online Whiteboard",
+      "position": "Free software developer",
       "website": "https://wbo.ophir.dev/",
       "startDate": "2013-08-27",
       "summary": "WBO is a fun side-project I'm working on in my free time. It's a free and opensource collaborative online whiteboard.",
