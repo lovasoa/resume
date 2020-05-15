@@ -84,7 +84,6 @@
         "Relational algebra",
         "Post-relational databases",
         "Queuing theory",
-        "Post-relational databases",
         "UML modeling",
         "Project management",
         "Human factors"
@@ -139,11 +138,13 @@
       ]
     },
     {
-      "name": "Back-end web development",
+      "name": "Back-end software development",
       "level": "Master",
       "keywords": [
         "Python",
         "Rust",
+        "Java",
+        "Scala",
         "Node",
         "PHP"
       ]
@@ -160,14 +161,14 @@
     },
     {
       "language": "Russian",
-      "fluency": "Conversational (I lived 2 years in Moscow and my partner is russian)"
+      "fluency": "Conversational (I lived in Moscow for 2 years; my partner is russian)"
     }
   ],
   "interests": [
     {
       "name": "Ethical Hacking",
       "keywords": [
-        "I found security vulnerabilities on a mozilla website, Firefox, Chrome, and Safari, and got awarded a bug bounty from Mozilla.",
+        "I found several security vulnerabilities in Firefox, Chrome, Safari, and a Mozilla website, and got awarded bug bounties from Mozilla and Google.",
         "I love playing root-me.org challenges, and am an avid information security news reader."
       ]
     },
