@@ -81,6 +81,17 @@
         "~4000 daily connections on the official instance, constantly growing",
         "Collaborating with onther contributors on Github"
       ]
+    },
+    {
+      "organization": "Dezoomify",
+      "position": "Free software developer",
+      "website": "https://dezoomify.ophir.dev/",
+      "startDate": "2013-08-27",
+      "summary": "I develop a suite of opensource tools to download zoomable images from museum websites. Also a very fun side-project, that taught me a lot.",
+      "highlights": [
+        "hundreds of websites supported",
+        "started as a personnal tool, now has thousands of daily users"
+      ]
     }
   ],
   "education": [
