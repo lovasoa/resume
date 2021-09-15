@@ -31,6 +31,13 @@
   },
   "work": [
     {
+      "company": "Enexflow",
+      "position": "CTO",
+      "website": "https://www.enexflow.com/",
+      "startDate": "2018-12-01",
+      "summary": " Enexflow is a consultancy company positioned at the intersection between technology, economics, and regulation facilitating the development of Clean Energy Resources, and their integration to power markets."
+    },
+    {
       "company": "AutoGrid",
       "position": "Senior Software Engineer",
       "website": "https://www.auto-grid.com/",
@@ -71,6 +78,17 @@
     }
   ],
   "volunteer": [
+    {
+      "organization": "Sanipasse",
+      "position": "Free software developer",
+      "website": "https://sanipasse.fr",
+      "startDate": "2021-05-16",
+      "summary": "Sanipasse.fr is the largest and most successful opensource EU Digital COVID Certificate verification software in France",
+      "highlights": [
+        "~4M monthly requests served",
+        "100s of physical terminals, crated by multiple companies, use sanipasse throughout France"
+      ]
+    },
     {
       "organization": "WBO Online Whiteboard",
       "position": "Free software developer",
