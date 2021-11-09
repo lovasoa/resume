@@ -1,674 +1,575 @@
-<!doctype html>
-<html>
-	<head>
-	
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
-	
-	<title>Ophir LOJKINE</title>
-	
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-	
-	<style type="text/css">
-	@import url(
-	https://fonts.googleapis.com/css?family=Lato:400,700
-);
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Ophir LOJKINE</title>
+    <meta name="description" content="I&#x27;m an enthusiastic French software engineer. My main interests include data science, software architecture, and optimization. I&#x27;ve studied software engineering in general, and data analysis in particular in France and Russia.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap">
+    <style>:root {
+  /* Colors */
+  --primaryColor: #212529;
+  --secondaryColor: #95a5a6;
+  --accentColor: #f1c40f;
+  --linkColor: #2ecc71;
+  --mutedColor: #f4f6f6;
+
+  /* Typography */
+  --ratio: 1.25;
+  --scale0: 1rem;
+  --scale1: calc(var(--scale0) * var(--ratio));
+  --scale2: calc(var(--scale1) * var(--ratio));
+  --scale3: calc(var(--scale2) * var(--ratio));
+  --scale4: calc(var(--scale3) * var(--ratio));
+  --scale5: calc(var(--scale4) * var(--ratio));
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 14px;
+}
+
 body {
-	background: #fff;
-	font-family: Lato, sans-serif;
-	margin: 0 0 80px;
+  color: var(--primaryColor);
+  display: grid;
+  font: 1em/1.5 Lato, sans-serif;
+  gap: 2em;
+  grid-template-columns:
+    [full-start]
+    1fr
+    [main-start side-start]
+    minmax(min-content, 12em)
+    [side-end content-start]
+    minmax(min-content, 36em)
+    [main-end content-end]
+    1fr
+    [full-end];
+  grid-template-rows: auto [content] 0;
+  margin-bottom: 4em;
 }
+
+body::before {
+  content: '';
+  grid-column: full;
+  grid-row: content;
+}
+
+ol,
+ul {
+  padding-left: 1em;
+}
+
+li + li {
+  margin-top: 0.2em;
+}
+
+li::marker {
+  color: var(--mutedColor);
+}
+
 a {
-	color: #2ecc71;
+  color: var(--linkColor);
+  text-decoration: none;
+  transition: color 0.2s;
 }
+
 a:focus,
 a:hover {
-	color: #f1c40f;
-	text-decoration: none;
+  color: var(--accentColor);
 }
-p {
-	line-height: 1.5;
-	margin: 0;
-}
-p + p {
-	margin-top: 10px;
-}
+
 h1,
 h2,
 h3,
+h5 {
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: var(--scale5);
+}
+
+h2 {
+  color: var(--secondaryColor);
+  font-size: var(--scale4);
+}
+
+h3 {
+  color: var(--accentColor);
+  font-size: var(--scale3);
+  grid-column: side;
+  margin-bottom: 1rem;
+}
+
 h4 {
-	margin-top: 0
+  font-size: var(--scale2);
 }
-section {
-	margin-top: 30px;
+
+h5 {
+  font-size: var(--scale1);
 }
-li {
-	line-height: 1.8;
-	list-style: none;
+
+h6 {
+  font-size: var(--scale0);
 }
-li:before {
-	content: "\f052";
-	float: left;
-	font: 13px Octicons;
-	margin-top: 6px;
-	margin-left: -20px;
-	opacity: .1;
-	position: absolute;
-}
+
 blockquote {
-	border-left: 5px solid #e7e9ec;
-	font-size: 14px;
-}
-em {
-	color: #95a5a6;
-	font-weight: normal;
-	font-style: normal;
-}
-h4 span:first-child {
-	color: #000;
-	font-weight: bold;
-}
-.container {
-	max-width: 750px;
-	padding: 0 30px;
-}
-.col-sm-6 {
-	margin-bottom: 10px;
-}
-.col-sm-12 h4 {
-	margin-top: 12px; 
-}
-.col-sm-12 + .col-sm-12 {
-	margin-top: 30px;
-}
-#header {
-	background: #f4f6f6;
-	padding: 50px 0;
-	margin-bottom: 30px;
-}
-#header h2 {
-	color: #95a5a6;
-	font-size: 24px;
-}
-#content h3 {
-	color: #f1c40f;
-	font-size: 26px;
-	margin-top: -4px;
-}
-#content aside {
-	text-align: right;
-	padding-right: 30px;
-}
-#profiles .network {
-	text-transform: capitalize;
-}
-#work .position,
-#volunteer .position {
-	font-weight: bold;
-	margin-bottom: 8px;
-}
-#education .area {
-	font-weight: bold;
-}
-#education .area:before {
-	content: "\f0d7";
-	font: 16px Octicons;
-	margin-right: 6px;
-}
-#education .studyType {
-	margin-left: 25px;
-}
-#awards .summary,
-#publications .summary {
-	margin-top: 8px;
-}
-#publications .website a:before {
-	content: attr(href);
+  border-left: 0.2em solid var(--mutedColor);
+  padding-left: 1em;
 }
 
-@media (min-width: 480px) {
-	.strike-through {
-		border-top: 1px solid #f4f6f6;
-		height: 20px;
-		margin-top: 12px;
-		margin-bottom: -2px;
-		position: relative;
-	}
-	.strike-through span,
-	.strike-through a {
-		background: #fff;
-		position: absolute;
-	}
-	.strike-through span:first-child {
-		padding-right: 20px;
-		margin-top: -12px;
-	}
-	.strike-through span + span {
-		font-size: 14px;
-		margin-top: -10px;
-		padding-left: 20px;
-		right: 0;
-	}
-}
-@media (max-width: 768px) {
-	.col-sm-6:last-child {
-		margin-bottom: 0px;
-	}
-	#content aside {
-		margin-bottom: 20px;
-		padding-right: 0;
-		text-align: left;
-	}
-	#publications .website a:before {
-		content: "View publication";
-	}
-}
-@media (max-width: 480px) {
-	h1 {
-		font-size: 26px;
-	}
-	.date {
-		font-size: 14px;
-		margin-bottom: 5px;
-	}
-	.strike-through span:first-child {
-		margin-bottom: 7px;
-	}
-	.strike-through span {
-		display: block;
-	}	
-	#header {
-		margin-bottom: 10px;
-		padding: 40px 0;
-	}
-	#actions {
-		display: none;
-	}
+cite {
+  color: var(--secondaryColor);
+  font-style: inherit;
 }
 
-	</style>
-	
-	</head>
-	<body>
-	
-	<header id="header">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-9 col-sm-push-3">
-					<h1>
-						Ophir LOJKINE
-					</h1>
-					<h2>
-						SOFTWARE ENGINEER
-					</h2>
-				</div>
-			</div>
-		</div>
-	</header>
-	<div id="content" class="container">
+cite::before {
+  content: '— ';
+}
 
-	<section id="contact" class="row">
-		<aside class="col-sm-3">
-			<h3>Contact</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-6">
-				<strong>Email</strong>
-				<div class="email">contact@ophir.dev</div>
-			</div>
-			<div class="col-sm-6">
-				<strong>Phone</strong>
-				<div class="phone">+33 6 44 85 27 35</div>
-			</div>
-			<div class="col-sm-6">
-				<strong>Website</strong>
-				<div class="website">
-					<a href="https://github.com/lovasoa">https://github.com/lovasoa</a>
-				</div>
-			</div>
-			</div>
-		</div>
-	</section>
-	<section id="about" class="row">
-		<aside class="col-sm-3">
-			<h3>About</h3>
-		</aside>
-		<div class="col-sm-9">
-			<p>I&#x27;m an enthusiastic French software engineer. My main interests include data science, software architecture, and optimization. I&#x27;ve studied software engineering in general, and data analysis in particular in France and Russia.</p>
-		</div>
-	</section>
-	<section id="profiles" class="row">
-		<aside class="col-sm-3">
-			<h3>Profiles</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-				<div class="col-sm-6">
-					<strong class="network">
-						github
-					</strong>
-					<div class="username">
-						<div class="url">
-							<a href="https://github.com/lovasoa?tab=repositories">lovasoa</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-6">
-					<strong class="network">
-						linkedin
-					</strong>
-					<div class="username">
-						<div class="url">
-							<a href="https://www.linkedin.com/in/ophir-lojkine-412556ab">Ophir LOJKINE</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-6">
-					<strong class="network">
-						stackoverflow
-					</strong>
-					<div class="username">
-						<div class="url">
-							<a href="http://stackoverflow.com/users/3579309/lovasoa">lovasoa</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+.masthead {
+  background: var(--mutedColor);
+  display: inherit;
+  gap: inherit;
+  grid-column: full;
+  grid-template-columns: inherit;
+  padding: 4em 0;
+  row-gap: 0;
+}
 
-	<section id="work" class="row">
-		<aside class="col-sm-3">
-			<h3>Work</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Enexflow</span>
-					<span class="date">
-						2018-12-01 — 
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="https://www.enexflow.com/">https://www.enexflow.com/</a>
-				</div>
-				<div class="position">
-					CTO
-				</div>
-				<div class="summary">
-					<p> Enexflow is a consultancy company positioned at the intersection between technology, economics, and regulation facilitating the development of Clean Energy Resources, and their integration to power markets.</p>
-				</div>
-			</div>
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>AutoGrid</span>
-					<span class="date">
-						2018-12-01 — 
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="https://www.auto-grid.com/">https://www.auto-grid.com/</a>
-				</div>
-				<div class="position">
-					Senior Software Engineer
-				</div>
-				<div class="summary">
-					<p>We built an energy data management platform for Total that allows energy market actors to cooperate efficiently, visualize their data and extract valuable insights, and manage their devices in the field.</p>
-				</div>
-				<h4>Highlights</h4>
-				<ul class="highlights">
-					<li class="bullet">Wrote Python services that now handle sensitive and complex time-series in realtime in production every day.</li>
-					<li class="bullet">I had the occasion to work both on a large kubernetes cluster and embedded real-time devices with limited resources.</li>
-					<li class="bullet">Built insightful data visualizations with Grafana.</li>
-					<li class="bullet">Modeled a large multivariate optimization problem in Tensorflow</li>
-				</ul>
-			</div>
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Qwant</span>
-					<span class="date">
-						2017-09-04 — 2018-12-01
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="https://www.qwant.com/">https://www.qwant.com/</a>
-				</div>
-				<div class="position">
-					Data Engineer
-				</div>
-				<div class="summary">
-					<p>Qwant is a search engine that does not track its users. It has the largest web index in Europe, the quality of which I contributed to. I was a member of the core &#x27;data&#x27; team, working on the company&#x27;s web crawlers, databases (indices), and data analysis tools.</p>
-				</div>
-				<h4>Highlights</h4>
-				<ul class="highlights">
-					<li class="bullet">created a machine-learning model for the classification of user searches (using distributed word-embedding and clustering in Spark)</li>
-					<li class="bullet">Contributed to the crawlers, fixed many data-quality issues.</li>
-					<li class="bullet">Built data visualization tools.</li>
-				</ul>
-			</div>
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>ERDF</span>
-					<span class="date">
-						2015-04-01 — 2015-08-05
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="http://www.enedis.fr/">http://www.enedis.fr/</a>
-				</div>
-				<div class="position">
-					Data science intern
-				</div>
-				<div class="summary">
-					<p>ERDF (now Enedis) is the largest french electric network compagny. I interned as a data scientist, and built a workload prediction tool.</p>
-				</div>
-				<h4>Highlights</h4>
-				<ul class="highlights">
-					<li class="bullet">used python with ipython, numpy, scipy and scikit-learn</li>
-					<li class="bullet">worked with an SQL database of over 10 million datapoints describing the evolution of electric consumption over ~5 years at several points in the distribution network.</li>
-					<li class="bullet">Built a web application to access the previsions.</li>
-				</ul>
-			</div>
-			</div>
-		</div>
-	</section>
+.masthead > *,
+section {
+  grid-column: main;
+}
 
-	<section id="volunteer" class="row">
-		<aside class="col-sm-3">
-			<h3>Volunteer</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Sanipasse</span>
-					<span class="date">
-						2021-05-16 — 
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="https://sanipasse.fr">https://sanipasse.fr</a>
-				</div>
-				<div class="position">
-					Free software developer
-				</div>
-				<div class="summary">
-					<p>Sanipasse.fr is the largest and most successful opensource EU Digital COVID Certificate verification software in France</p>
-				</div>
-				<h4>Highlights</h4>
-				<ul class="highlights">
-					<li class="bullet">~4M monthly requests served</li>
-					<li class="bullet">100s of physical terminals, crated by multiple companies, use sanipasse throughout France</li>
-				</ul>
-			</div>
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>WBO Online Whiteboard</span>
-					<span class="date">
-						2013-08-27 — 
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="https://wbo.ophir.dev/">https://wbo.ophir.dev/</a>
-				</div>
-				<div class="position">
-					Free software developer
-				</div>
-				<div class="summary">
-					<p>WBO is a fun side-project I&#x27;m working on in my free time. It&#x27;s a free and opensource collaborative online whiteboard.</p>
-				</div>
-				<h4>Highlights</h4>
-				<ul class="highlights">
-					<li class="bullet">~4000 daily connections on the official instance, constantly growing</li>
-					<li class="bullet">Collaborating with onther contributors on Github</li>
-				</ul>
-			</div>
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Dezoomify Image Downloader</span>
-					<span class="date">
-						2013-12-29 — 
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="https://dezoomify.ophir.dev/">https://dezoomify.ophir.dev/</a>
-				</div>
-				<div class="position">
-					Free software developer
-				</div>
-				<div class="summary">
-					<p>I develop a suite of opensource tools to download zoomable images from museum websites. Also a very fun side-project, that taught me a lot.</p>
-				</div>
-				<h4>Highlights</h4>
-				<ul class="highlights">
-					<li class="bullet">hundreds of websites supported</li>
-					<li class="bullet">started as a personnal tool, now has thousands of daily users</li>
-				</ul>
-			</div>
-			</div>
-		</div>
-	</section>
-	
-	<section id="education" class="row">
-		<aside class="col-sm-3">
-			<h3>Education</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Bauman Moscow State University</span>
-					<span class="date">
-						2015-09-01 — 2017-07-01
-					</span>
-				</h4>
-				<div class="area">
-					Computer Science and Control Systems
-				</div>
-				<div class="studyType">
-					Master&#x27;s degree
-				</div>
-				<h4>Courses</h4>
-				<ul class="courses">
-					<li>Master&#x27;s thesis: implement, compare, and model several distributed join algorithms on Spark</li>
-					<li>Relational algebra</li>
-					<li>Post-relational databases</li>
-					<li>Queuing theory</li>
-					<li>UML modeling</li>
-					<li>Project management</li>
-					<li>Human factors</li>
-				</ul>
-			</div>
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>École Centrale de Nantes</span>
-					<span class="date">
-						2013-09-01 — 2015-07-01
-					</span>
-				</h4>
-				<div class="area">
-					Engineering
-				</div>
-				<div class="studyType">
-					Grande École (master degree)
-				</div>
-				<h4>Courses</h4>
-				<ul class="courses">
-					<li>General engineering</li>
-					<li>Object-oriented programming</li>
-					<li>Databases</li>
-					<li>Compilers</li>
-					<li>Functional programming</li>
-				</ul>
-			</div>
-			</div>
-		</div>
-	</section>
-	
-	
-	<section id="publications" class="row">
-		<aside class="col-sm-3">
-			<h3>Publications</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Optimal parameters for bloom-filtered joins in Spark</span>
-					<span class="date">
-						2017-06-12
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="https://arxiv.org/abs/1706.02785"></a>
-				</div>
-				<div class="summary">
-					<p>an algorithm that joins relational database tables efficiently in a distributed environment using Bloom filters of an optimal size</p>
-				</div>
-			</div>
-			</div>
-		</div>
-	</section>
-	
-	<section id="skills" class="row">
-		<aside class="col-sm-3">
-			<h3>Skills</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Front-end web development</h4>
-				</div>
-				<ul class="keywords">
-					<li>HTML</li>
-					<li>CSS</li>
-					<li>Javascript</li>
-					<li>Angular</li>
-					<li>Vue.js</li>
-					<li>Svelte</li>
-				</ul>
-			</div>
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Scientific programming</h4>
-				</div>
-				<ul class="keywords">
-					<li>python</li>
-					<li>tensorflow</li>
-					<li>scipy</li>
-					<li>scikit-learn</li>
-				</ul>
-			</div>
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Back-end software development</h4>
-				</div>
-				<ul class="keywords">
-					<li>Python</li>
-					<li>Rust</li>
-					<li>Java</li>
-					<li>Scala</li>
-					<li>Node</li>
-					<li>PHP</li>
-				</ul>
-			</div>
-			</div>
-		</div>
-	</section>
+article > * + *,
+blockquote > * + * {
+  margin-top: 0.6em;
+}
 
-	<section id="languages" class="row">
-		<aside class="col-sm-3">
-			<h3>Languages</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-6">
-				<div class="language">
-					<strong>French</strong>
-				</div>
-				<div class="fluency">
-					Native tongue
-				</div>
-			</div>
-			<div class="col-sm-6">
-				<div class="language">
-					<strong>English</strong>
-				</div>
-				<div class="fluency">
-					Good command, both written and spoken (TOEIC 930)
-				</div>
-			</div>
-			<div class="col-sm-6">
-				<div class="language">
-					<strong>Russian</strong>
-				</div>
-				<div class="fluency">
-					Conversational (I lived in Moscow for 2 years; my partner is russian)
-				</div>
-			</div>
-			</div>
-		</div>
-	</section>
+.stack {
+  display: grid;
+  gap: 1.5em;
+}
 
-	<section id="interests" class="row">
-		<aside class="col-sm-3">
-			<h3>Interests</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Ethical Hacking</h4>
-				</div>
-				<ul class="keywords">
-					<li>I found several security vulnerabilities in Firefox, Chrome, Safari, and a Mozilla website, and got awarded bug bounties from Mozilla and Google.</li>
-					<li>I love playing root-me.org challenges, and am an avid information security news reader.</li>
-				</ul>
-			</div>
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Theater</h4>
-				</div>
-				<ul class="keywords">
-					<li>Played in Centrale Nantes&#x27; theater company</li>
-				</ul>
-			</div>
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Rowing</h4>
-				</div>
-				<ul class="keywords">
-					<li>Practiced at Centrale Nantes</li>
-				</ul>
-			</div>
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Climbing</h4>
-				</div>
-				<ul class="keywords">
-					<li>Practiced in Moscow</li>
-				</ul>
-			</div>
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Free software</h4>
-				</div>
-				<ul class="keywords">
-					<li>using</li>
-					<li>contributing code</li>
-					<li>reporting bugs</li>
-				</ul>
-			</div>
-			</div>
-		</div>
-	</section>
-	
+.grid-list {
+  display: grid;
+  gap: 1em;
+}
 
-	</div>
-	
-	</body>
+.spaced-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.spaced-list:first-child::before {
+  border-bottom: 1px solid var(--mutedColor);
+  content: '';
+  flex-grow: 1;
+  margin: 0 1em;
+  order: 1;
+}
+
+.spaced-list > :nth-child(2) {
+  order: 2;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+.tag-list > li {
+  background: var(--mutedColor);
+  margin: 0 0.2em 0.2em 0;
+  padding: 0.2em 0.6em;
+}
+
+@media print, (min-width: 48em) {
+  h3 {
+    text-align: right;
+    margin-bottom: inherit;
+  }
+
+  .masthead > *,
+  section {
+    grid-column: content;
+  }
+
+  section {
+    display: contents;
+  }
+
+  .grid-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+</style>
+  </head>
+  <body>
+      <header class="masthead">
+          <h1>Ophir LOJKINE</h1>
+          <h2>SOFTWARE ENGINEER</h2>
+      </header>
+      <section id="contact">
+        <h3>Contact</h3>
+        <div class="grid-list">
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:contact@ophir.dev">contact@ophir.dev</a>
+            </div>
+            <div>
+              <h4>Phone</h4>
+              +33 6 44 85 27 35
+            </div>
+        </div>
+      </section>
+        <section id="about">
+          <h3>About</h3>
+          <article>
+            <p>I'm an enthusiastic French software engineer. My main interests include data science, software architecture, and optimization. I've studied software engineering in general, and data analysis in particular in France and Russia.</p>
+          </article>
+        </section>
+        <section id="profiles">
+          <h3>Profiles</h3>
+          <div class="grid-list">
+              <div>
+                  <h4>github</h4>
+                    <a href="https://github.com/lovasoa?tab&#x3D;repositories">lovasoa</a>
+              </div>
+              <div>
+                  <h4>linkedin</h4>
+                    <a href="https://www.linkedin.com/in/ophir-lojkine-412556ab">Ophir LOJKINE</a>
+              </div>
+              <div>
+                  <h4>stackoverflow</h4>
+                    <a href="http://stackoverflow.com/users/3579309/lovasoa">lovasoa</a>
+              </div>
+          </div>
+        </section>
+
+      <section id="work">
+        <h3>Work</h3>
+        <div class="stack">
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4></h4>
+                  <span>
+                    <time datetime="2018-12-01">Dec 2018</time> –
+                    Present
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>CTO</strong>
+                </div>
+              </header>
+                <p>Enexflow is a consultancy company positioned at the intersection between technology, economics, and regulation facilitating the development of Clean Energy Resources, and their integration to power markets.</p>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4></h4>
+                  <span>
+                    <time datetime="2018-12-01">Dec 2018</time> –
+                    Present
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>Senior Software Engineer</strong>
+                </div>
+              </header>
+                <p>We built an energy data management platform for Total that allows energy market actors to cooperate efficiently, visualize their data and extract valuable insights, and manage their devices in the field.</p>
+                <h5>Highlights</h5>
+                <ul>
+                    <li>Wrote Python services that now handle sensitive and complex time-series in realtime in production every day.</li>
+                    <li>I had the occasion to work both on a large kubernetes cluster and embedded real-time devices with limited resources.</li>
+                    <li>Built insightful data visualizations with Grafana.</li>
+                    <li>Modeled a large multivariate optimization problem in Tensorflow</li>
+                </ul>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4></h4>
+                  <span>
+                    <time datetime="2017-09-04">Sep 2017</time> –
+                    <time datetime="2018-12-01">Dec 2018</time>
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>Data Engineer</strong>
+                </div>
+              </header>
+                <p>Qwant is a search engine that does not track its users. It has the largest web index in Europe, the quality of which I contributed to. I was a member of the core 'data' team, working on the company's web crawlers, databases (indices), and data analysis tools.</p>
+                <h5>Highlights</h5>
+                <ul>
+                    <li>created a machine-learning model for the classification of user searches (using distributed word-embedding and clustering in Spark)</li>
+                    <li>Contributed to the crawlers, fixed many data-quality issues.</li>
+                    <li>Built data visualization tools.</li>
+                </ul>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4></h4>
+                  <span>
+                    <time datetime="2015-04-01">Apr 2015</time> –
+                    <time datetime="2015-08-05">Aug 2015</time>
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>Data science intern</strong>
+                </div>
+              </header>
+                <p>ERDF (now Enedis) is the largest french electric network compagny. I interned as a data scientist, and built a workload prediction tool.</p>
+                <h5>Highlights</h5>
+                <ul>
+                    <li>used python with ipython, numpy, scipy and scikit-learn</li>
+                    <li>worked with an SQL database of over 10 million datapoints describing the evolution of electric consumption over ~5 years at several points in the distribution network.</li>
+                    <li>Built a web application to access the previsions.</li>
+                </ul>
+            </article>
+        </div>
+      </section>
+      <section id="volunteer">
+        <h3>Volunteer</h3>
+        <div class="stack">
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>Sanipasse</h4>
+                  <span>
+                    <time datetime="2021-05-16">May 2021</time> –
+                    Present
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>Free software developer</strong>
+                </div>
+              </header>
+                <p>Sanipasse.fr is the largest and most successful opensource EU Digital COVID Certificate verification software in France</p>
+                <h5>Highlights</h5>
+                <ul>
+                    <li>~4M monthly requests served</li>
+                    <li>100s of physical terminals, crated by multiple companies, use sanipasse throughout France</li>
+                </ul>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>WBO Online Whiteboard</h4>
+                  <span>
+                    <time datetime="2013-08-27">Aug 2013</time> –
+                    Present
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>Free software developer</strong>
+                </div>
+              </header>
+                <p>WBO is a fun side-project I'm working on in my free time. It's a free and opensource collaborative online whiteboard.</p>
+                <h5>Highlights</h5>
+                <ul>
+                    <li>~4000 daily connections on the official instance, constantly growing</li>
+                    <li>Collaborating with onther contributors on Github</li>
+                </ul>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>Dezoomify Image Downloader</h4>
+                  <span>
+                    <time datetime="2013-12-29">Dec 2013</time> –
+                    Present
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>Free software developer</strong>
+                </div>
+              </header>
+                <p>I develop a suite of opensource tools to download zoomable images from museum websites. Also a very fun side-project, that taught me a lot.</p>
+                <h5>Highlights</h5>
+                <ul>
+                    <li>hundreds of websites supported</li>
+                    <li>started as a personnal tool, now has thousands of daily users</li>
+                </ul>
+            </article>
+        </div>
+      </section>
+      <section id="education">
+        <h3>Education</h3>
+        <div class="stack">
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>Bauman Moscow State University</h4>
+                  <span>
+                    <time datetime="2015-09-01">Sep 2015</time> –
+                    <time datetime="2017-07-01">Jul 2017</time>
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>Computer Science and Control Systems</strong>
+                </div>
+              </header>
+                <p>Master's degree</p>
+                <h5>Courses</h5>
+                <ul>
+                    <li>Master&#x27;s thesis: implement, compare, and model several distributed join algorithms on Spark</li>
+                    <li>Relational algebra</li>
+                    <li>Post-relational databases</li>
+                    <li>Queuing theory</li>
+                    <li>UML modeling</li>
+                    <li>Project management</li>
+                    <li>Human factors</li>
+                </ul>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>École Centrale de Nantes</h4>
+                  <span>
+                    <time datetime="2013-09-01">Sep 2013</time> –
+                    <time datetime="2015-07-01">Jul 2015</time>
+                  </span>
+                </div>
+                <div class="spaced-list">
+                    <strong>Engineering</strong>
+                </div>
+              </header>
+                <p>Grande École (master degree)</p>
+                <h5>Courses</h5>
+                <ul>
+                    <li>General engineering</li>
+                    <li>Object-oriented programming</li>
+                    <li>Databases</li>
+                    <li>Compilers</li>
+                    <li>Functional programming</li>
+                </ul>
+            </article>
+        </div>
+      </section>
+      <section id="publications">
+        <h3>Publications</h3>
+        <div class="stack">
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>Optimal parameters for bloom-filtered joins in Spark</h4>
+                    <time datetime="2017-06-12">Jun 2017</time>
+                </div>
+                <div class="spaced-list">
+                </div>
+              </header>
+                <p>an algorithm that joins relational database tables efficiently in a distributed environment using Bloom filters of an optimal size</p>
+            </article>
+        </div>
+      </section>
+      <section id="skills">
+        <h3>Skills</h3>
+        <div class="grid-list">
+            <div>
+                <h4>Front-end web development</h4>
+                <ul class="tag-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>Angular</li>
+                    <li>Vue.js</li>
+                    <li>Svelte</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Scientific programming</h4>
+                <ul class="tag-list">
+                    <li>python</li>
+                    <li>tensorflow</li>
+                    <li>scipy</li>
+                    <li>scikit-learn</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Back-end software development</h4>
+                <ul class="tag-list">
+                    <li>Python</li>
+                    <li>Rust</li>
+                    <li>Java</li>
+                    <li>Scala</li>
+                    <li>Node</li>
+                    <li>PHP</li>
+                </ul>
+            </div>
+        </div>
+      </section>
+      <section id="languages">
+        <h3>Languages</h3>
+        <div class="grid-list">
+            <div>
+                <h4>French</h4>
+              Native tongue
+            </div>
+            <div>
+                <h4>English</h4>
+              Good command, both written and spoken (TOEIC 930)
+            </div>
+            <div>
+                <h4>Russian</h4>
+              Conversational (I lived in Moscow for 2 years; my partner is russian)
+            </div>
+        </div>
+      </section>
+      <section id="interests">
+        <h3>Interests</h3>
+        <div class="grid-list">
+            <div>
+                <h4>Ethical Hacking</h4>
+                <ul class="tag-list">
+                    <li>I found several security vulnerabilities in Firefox, Chrome, Safari, and a Mozilla website, and got awarded bug bounties from Mozilla and Google.</li>
+                    <li>I love playing root-me.org challenges, and am an avid information security news reader.</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Theater</h4>
+                <ul class="tag-list">
+                    <li>Played in Centrale Nantes&#x27; theater company</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Rowing</h4>
+                <ul class="tag-list">
+                    <li>Practiced at Centrale Nantes</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Climbing</h4>
+                <ul class="tag-list">
+                    <li>Practiced in Moscow</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Free software</h4>
+                <ul class="tag-list">
+                    <li>using</li>
+                    <li>contributing code</li>
+                    <li>reporting bugs</li>
+                </ul>
+            </div>
+        </div>
+      </section>
+  </body>
 </html>
