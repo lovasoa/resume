@@ -5,7 +5,7 @@
   "main": "resume.json",
   "scripts": {
     "test": "resume validate",
-    "build": "resume export index.html && resume export resume.pdf",
+    "build": "resume export index.html && RESUME_PUPPETEER_NO_SANDBOX=1 resume export --theme macchiato-ibic resume.pdf",
     "preversion": "npm run build"
   },
   "repository": {
@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/lovasoa/resume#readme",
   "dependencies": {
+    "jsonresume-theme-macchiato-ibic": "^1",
     "resume-cli": "^3.0.5"
   }
 }
