@@ -31,11 +31,17 @@
   },
   "work": [
     {
-      "name": "Enexflow",
+      "name": "Hyxos",
       "position": "CTO",
-      "website": "https://www.enexflow.com/",
+      "website": "https://hyxos.com/",
       "startDate": "2018-12-01",
-      "summary": " Enexflow is a consultancy company positioned at the intersection between technology, economics, and regulation facilitating the development of Clean Energy Resources, and their integration to power markets."
+      "summary": "Hyxos is a software development and consultancy driven by a mission to implement cutting-edge digital technologies in the green energy sector. We develop a platform with the ambition to become the data backbone of all hydrogen industry players. As a consultancy, we also accompany major green electricity players in their development and their operations, focusing on leveraging the power of their data. As a CTO, my job is to oversee the tech team, transforming business ideas into working code.",
+      "highlight": [
+        "Grew the tech team from me alone to great team of passionate team of close-nit engineers.",
+        "Designed a large integrated data platform with web, SCADA, and embedded components from scratch.",
+        "Designed the mathematical optimizer making the platform smart.",
+        "Worked at all levels, from running efficient embedded edge software in rust to running a large computing workload in Kubernetes."
+      ]
     },
     {
       "name": "AutoGrid",
@@ -78,6 +84,13 @@
     }
   ],
   "volunteer": [
+    {
+      "organization": "SQLPage",
+      "position": "Free software developer",
+      "website": "https://sql.ophir.dev",
+      "startDate": "2022-05-25",
+      "summary": "A SQL-only low-code website builder. SQLPage is a web application framework which helps building data-centric full-stack applications by writing only SQL. It uses a set of pre-built components and a smart variable system to remove all frontend and backend programming languages from the equation, letting data people focusing and what matters to them: data models and insights extraction."
+    },
     {
       "organization": "Sanipasse",
       "position": "Free software developer",
