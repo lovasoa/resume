@@ -33,7 +33,7 @@
     {
       "name": "Hyxos",
       "position": "CTO",
-      "website": "https://hyxos.com/",
+      "url": "https://hyxos.com/",
       "startDate": "2018-12-01",
       "summary": "Hyxos is a software development and consultancy company driven by a mission to implement cutting-edge digital technologies in the green energy sector. We develop a platform with the ambition to become the data backbone of all hydrogen industry players. As a consultancy, we also accompany major green electricity players in their development and their operations, focusing on leveraging the power of their data. As a CTO, my job is to oversee the tech team, transforming business ideas into working code.",
       "highlights": [
@@ -46,7 +46,7 @@
     {
       "name": "AutoGrid",
       "position": "Senior Software Engineer",
-      "website": "https://www.auto-grid.com/",
+      "url": "https://www.auto-grid.com/",
       "startDate": "2018-12-01",
       "summary": "We built an energy data management platform for Total that allows energy market actors to cooperate efficiently, visualize their data and extract valuable insights, and manage their devices in the field.",
       "highlights": [
@@ -59,7 +59,7 @@
     {
       "name": "Qwant",
       "position": "Data Engineer",
-      "website": "https://www.qwant.com/",
+      "url": "https://www.qwant.com/",
       "startDate": "2017-09-04",
       "endDate": "2018-12-01",
       "summary": "Qwant is a search engine that does not track its users. It has the largest web index in Europe, the quality of which I contributed to. I was a member of the core 'data' team, working on the company's web crawlers, databases (indices), and data analysis tools.",
@@ -72,7 +72,7 @@
     {
       "name": "ERDF",
       "position": "Data science intern",
-      "website": "http://www.enedis.fr/",
+      "url": "http://www.enedis.fr/",
       "startDate": "2015-04-01",
       "endDate": "2015-08-05",
       "summary": "ERDF (now Enedis) is the largest french electric network compagny. I interned as a data scientist, and built a workload prediction tool.",
@@ -87,14 +87,14 @@
     {
       "organization": "SQLPage",
       "position": "Free software developer",
-      "website": "https://sql.ophir.dev",
+      "url": "https://sql.ophir.dev",
       "startDate": "2022-06-01",
       "summary": "A SQL-only low-code website builder. SQLPage is a web application framework which helps building data-centric full-stack applications by writing only SQL. It uses a set of pre-built components and a smart variable system to remove all frontend and backend programming languages from the equation, letting data people focus on what matters to them: data models and insights extraction."
     },
     {
       "organization": "Sanipasse",
       "position": "Free software developer",
-      "website": "https://sanipasse.fr",
+      "url": "https://sanipasse.ophir.dev/",
       "startDate": "2021-05-16",
       "summary": "Sanipasse.fr is the largest and most successful opensource EU Digital COVID Certificate verification software in France",
       "highlights": [
@@ -128,6 +128,7 @@
   "education": [
     {
       "institution": "Bauman Moscow State University",
+      "url": "https://bmstu.ru/",
       "area": "Computer Science and Control Systems",
       "studyType": "Master's degree",
       "startDate": "2015-09-01",
@@ -145,6 +146,7 @@
     },
     {
       "institution": "École Centrale de Nantes",
+      "url": "https://www.ec-nantes.fr/",
       "area": "Engineering",
       "studyType": "Grande École (master degree)",
       "startDate": "2013-09-01",
@@ -218,7 +220,7 @@
     },
     {
       "language": "Russian",
-      "fluency": "Conversational (I lived in Moscow for 2 years; my partner is russian)"
+      "fluency": "Conversational (I lived in Moscow for 2 years; my wife is russian)"
     }
   ],
   "interests": [
