@@ -25,6 +25,6 @@
   "homepage": "https://github.com/lovasoa/resume#readme",
   "dependencies": {
     "jsonresume-theme-macchiato-ibic": "^1",
-    "resume-cli": "^3.0.5"
+    "resume-cli": "^3.0.8"
   }
 }
