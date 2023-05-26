@@ -24,6 +24,12 @@
   },
   "homepage": "https://github.com/lovasoa/resume#readme",
   "dependencies": {
+    "jsonresume-theme-even": "^0.18.1",
     "resume-cli": "^3.0.0"
+  },
+  "overrides": {
+    "resume-cli": {
+      "jsonresume-theme-even": "$jsonresume-theme-even"
+    }
   }
 }
