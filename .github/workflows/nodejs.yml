@@ -22,7 +22,7 @@ jobs:
         path: node_modules
         key: node_modules-${{ hashFiles('**/package.json') }}
     - run: npm install
-    - run: npm run build --if-present
+    - run: npm run build
     - run: npm test
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@releases/v3
