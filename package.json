@@ -5,7 +5,7 @@
   "main": "resume.json",
   "scripts": {
     "test": "resume validate",
-    "build": "npx jsonresume-theme-even < resume.json > index.html && RESUME_PUPPETEER_NO_SANDBOX=1 resume export resume.pdf",
+    "build": "npx jsonresume-theme-ophir < resume.json > index.html && RESUME_PUPPETEER_NO_SANDBOX=1 resume export --theme jsonresume-theme-ophir resume.pdf",
     "preversion": "npm run build"
   },
   "repository": {
@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/lovasoa/resume#readme",
   "dependencies": {
-    "jsonresume-theme-even": "^0.18.1",
+    "jsonresume-theme-ophir": "^0.18.2",
     "resume-cli": "^3.0.0"
   }
 }
