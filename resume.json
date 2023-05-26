@@ -96,27 +96,27 @@
       "position": "Free software developer",
       "url": "https://sanipasse.ophir.dev/",
       "startDate": "2021-05-16",
-      "summary": "Sanipasse.fr is the largest and most successful opensource EU Digital COVID Certificate verification software in France",
+      "summary": "Sanipasse.fr was the largest and most successful opensource EU Digital COVID Certificate verification software in France",
       "highlights": [
         "~4M monthly requests served",
-        "100s of physical terminals, crated by multiple companies, use sanipasse throughout France"
+        "100s of physical terminals, crated by multiple companies, used sanipasse throughout France"
       ]
     },
     {
       "organization": "WBO Online Whiteboard",
       "position": "Free software developer",
-      "website": "https://wbo.ophir.dev/",
+      "url": "https://wbo.ophir.dev/",
       "startDate": "2013-08-27",
       "summary": "WBO is a fun side-project I'm working on in my free time. It's a free and opensource collaborative online whiteboard.",
       "highlights": [
         "~4000 daily connections on the official instance, constantly growing",
-        "Collaborating with onther contributors on Github"
+        "Collaborating with other contributors on Github"
       ]
     },
     {
       "organization": "Dezoomify Image Downloader",
       "position": "Free software developer",
-      "website": "https://dezoomify.ophir.dev/",
+      "url": "https://dezoomify.ophir.dev/",
       "startDate": "2013-12-29",
       "summary": "I develop a suite of opensource tools to download zoomable images from museum websites. Also a very fun side-project, that taught me a lot.",
       "highlights": [
@@ -221,6 +221,10 @@
     {
       "language": "Russian",
       "fluency": "Conversational (I lived in Moscow for 2 years; my wife is russian)"
+    },
+    {
+      "language": "German",
+      "fluency": "Limited working proficiency"
     }
   ],
   "interests": [
