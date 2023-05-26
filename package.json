@@ -5,7 +5,7 @@
   "main": "resume.json",
   "scripts": {
     "test": "resume validate",
-    "build": "resume export index.html && RESUME_PUPPETEER_NO_SANDBOX=1 resume export resume.pdf",
+    "build": "npx jsonresume-theme-even < resume.json > index.html && RESUME_PUPPETEER_NO_SANDBOX=1 resume export resume.pdf",
     "preversion": "npm run build"
   },
   "repository": {
@@ -26,10 +26,5 @@
   "dependencies": {
     "jsonresume-theme-even": "^0.18.1",
     "resume-cli": "^3.0.0"
-  },
-  "overrides": {
-    "resume-cli": {
-      "jsonresume-theme-even": "$jsonresume-theme-even"
-    }
   }
 }
