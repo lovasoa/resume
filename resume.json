@@ -70,6 +70,18 @@
       ]
     },
     {
+      "name": "Rusroads",
+      "position": "Front-End Developer",
+      "url": "https://www.rusroads.com/",
+      "startDate": "2016-11-01",
+      "endDate": "2017-07-01",
+      "summary": "Built interactive visualizations for the Roads of Russia website, a multimedia platform showcasing Russia's cultural and historical landmarks.",
+      "highlights": [
+        "Tech stack: yii, angular.js, docker, PostgreSQL",
+        "Built some cool-looking interactive animated SVGs"
+      ]
+    },
+    {
       "name": "ERDF",
       "position": "Data science intern",
       "url": "http://www.enedis.fr/",
